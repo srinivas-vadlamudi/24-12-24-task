@@ -1,0 +1,32 @@
+.side {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(7, 130px);
+    padding: 8px;
+    gap: 5px;
+    overflow: hidden scroll;
+    width: 100%;
+}
+
+.side>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #f9fbfd;
+    transition: all 0.4s ease;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.side>div>i {
+    font-size: 1.2rem;
+}
+
+.side>div:hover {
+    color: blue;
+    background-color: #eef0f3;
+}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: CircularStd, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #fff;
+}
+
+.grid-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10%;
+}
+
+.header {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.blue-block {
+    background-color: #315fe9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-1 {
+    background-color: rgba(21, 71, 222, .95);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.white-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.profile {
+    gap: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #506690;
+}
+
+.profile>div {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile>.bi,
+.profile>.fa-brands {
+    color: #506690;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 1.5rem;
+
+}
+
+.profile>i:hover {
+    color: blue;
+}
+
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    gap: 20px;
+}
+
+.input>input {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.785);
+    width: fit-content;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    text-indent: 25%;
+    transition: all 0.4s ease;
+}
+
+#email {
+    position: relative;
+}
+
+.input>label>i {
+    position: absolute;
+    right: 42%;
+    top: 8px;
+    /* padding: 10px; */
+    color: lightgray;
+}
+
+.input>input:focus {
+    outline: 4px solid rgba(139, 164, 210, 0.842);
+}
+
+.input>div {
+    text-align: center;
+    border: 2px solid;
+    width: 200px;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: #315fe9;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: lightgray;
+    text-align: start;
+}
+
+.pic {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACPySOIxwMND-i-yez3OR8EcLmRpo15Dn5g&s);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input>div:hover {
+    background-color: rgba(231, 230, 230, 0.845);
+}
+
+.bi-list {
+    display: none;
+    font-size: 50px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.hidden {
+    display: none;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    padding: 10px 30px;
+    gap: 10px;
+    transition: all 0.4s ease;
+}
+
+.hidden1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACPySOIxwMND-i-yez3OR8EcLmRpo15Dn5g&s);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20%;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.hidden2>div {
+    background-color: #f9fbfd;
+
+    min-width: 20%;
+    border-radius: 10px;
+}
+
+.hidden3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first>input {
+    padding: 8px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid rgba(128, 128, 128, 0.785);
+}
+
+.Second {
+    text-align: center;
+    border: 2px solid;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: #315fe9;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.hidden3>.Second:hover {
+    background-color: rgba(231, 230, 230, 0.845);
+}
+
+.first>input:focus {
+    outline: 2px solid rgba(139, 164, 210, 0.842);
+}
